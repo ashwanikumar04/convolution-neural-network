@@ -5,11 +5,11 @@ from keras.layers import MaxPooling2D
 from keras.layers import Flatten
 from keras.layers import Dense
 from keras.preprocessing.image import ImageDataGenerator
-
+from keras.layers import Dropout
 classifier = Sequential()
 
 IMAGE_SIZE = 32
-EPOCHS = 1
+EPOCHS = 25
 
 # If the input size is increased, it will require more computing power
 classifier.add(Conv2D(32, (3, 3), input_shape=(
@@ -18,10 +18,15 @@ classifier.add(MaxPooling2D(pool_size=(2, 2)))
 # Second convolution layer
 classifier.add(Conv2D(32, (3, 3), activation='relu'))
 classifier.add(MaxPooling2D(pool_size=(2, 2)))
+# Third convolution layer
+classifier.add(Conv2D(64, (3, 3), activation='relu'))
+classifier.add(MaxPooling2D(pool_size=(2, 2)))
+
 classifier.add(Flatten())
 
 # Using units more than 100 gives better results. Convention is to use a power of 2
 classifier.add(Dense(activation='relu', units=128))
+classifier.add(Dropout(0.5))
 # Activation = "sigmoid" for binary if more than two then use softmax
 classifier.add(Dense(activation='sigmoid', units=1))
 
