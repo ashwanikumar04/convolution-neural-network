@@ -8,8 +8,8 @@ from keras.preprocessing.image import ImageDataGenerator
 from keras.layers import Dropout
 classifier = Sequential()
 
-IMAGE_SIZE = 32
-EPOCHS = 25
+IMAGE_SIZE = 128
+EPOCHS = 5
 
 # If the input size is increased, it will require more computing power
 classifier.add(Conv2D(32, (3, 3), input_shape=(
