@@ -23,14 +23,14 @@ A simple image classifier
 ## Resources
 
 ### Papers
-- __[Pooling](http://ais.uni-bonn.de/papers/icann2010_maxpool.pdf)
+- __[Pooling](http://ais.uni-bonn.de/papers/icann2010_maxpool.pdf)__
 
 ### Videos
-- __[Tensorflow and deep learning - without a PhD by Martin Görner](https://www.youtube.com/watch?v=vq2nnJ4g6N0)
-    - __[Code](https://github.com/martin-gorner/tensorflow-mnist-tutorial)
+- __[Tensorflow and deep learning - without a PhD by Martin Görner](https://www.youtube.com/watch?v=vq2nnJ4g6N0)__
+    - __[Code](https://github.com/martin-gorner/tensorflow-mnist-tutorial)__
 
 ## Jupyter Notebooks tricks
-- __[Link](https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/)
+- __[Link](https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/)__
 
 ### Install and configure code formatter
 ```
